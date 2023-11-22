@@ -1,0 +1,16 @@
+[package]
+name = "defibot_cairo"
+version = "0.1.0"
+
+[dependencies]
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.10.2" }
+starknet = "2.3.1"
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
+
+[[tool.snforge.fork]]
+name = "FORK_BLOCK_416850"
+url = "change-me"
+block_id.number = "416850"
